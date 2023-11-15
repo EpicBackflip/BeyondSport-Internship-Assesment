@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class DataLoader : MonoBehaviour
 {
@@ -14,7 +15,8 @@ public class DataLoader : MonoBehaviour
     public IEnumerable<Root> roots;
     public int currentFrameCount;
     public Spawner spawner = new Spawner();
-    public PersonObject personObject = new PersonObject();
+    public List<Person> persons = new List<Person>();
+    [FormerlySerializedAs("personObject")] public Movement movement = new Movement();
 
     private void Start()
     {
@@ -34,10 +36,12 @@ public class DataLoader : MonoBehaviour
                 if (!personIds.Contains(person.Id))
                 {
                     personIds.Add(person.Id);
+                    persons.Add(person);
                 }
             }
         }
         spawner.SpawnPersons();
+        movement.SetColor(persons);
     }
     
     public static IEnumerable<Root> getRoots(string path)
@@ -72,7 +76,7 @@ public class DataLoader : MonoBehaviour
         
         if (currentFrameData != null)
         {
-            personObject.UpdatePersonPositions(currentFrameData.Persons,currentFrameData.Ball);
+            movement.UpdatePersonPositions(currentFrameData.Persons,currentFrameData.Ball);
         }
     }
     

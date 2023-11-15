@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 327701370}
   - component: {fileID: 327701369}
-  - component: {fileID: 327701368}
+  - component: {fileID: 327701371}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -141,23 +141,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &327701368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 327701367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59556ed04e54a2a48a3322696ab9f1ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PersonId: 0
-  spawner: {fileID: 327701369}
-  blueColor: {fileID: 2100000, guid: f76dc2e02527d744d91b312750de9e43, type: 2}
-  redColor: {fileID: 2100000, guid: c5edf299977c8ae4bbff1484358d9c0b, type: 2}
-  ballprefab: {fileID: 1649341153}
 --- !u!114 &327701369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,13 +169,65 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &327701371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327701367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59556ed04e54a2a48a3322696ab9f1ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PersonId: 0
+  spawner: {fileID: 327701369}
+  blueColor: {fileID: 2100000, guid: f76dc2e02527d744d91b312750de9e43, type: 2}
+  redColor: {fileID: 2100000, guid: c5edf299977c8ae4bbff1484358d9c0b, type: 2}
+  ballprefab: {fileID: 1649341153}
 --- !u!4 &672596336 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1012225772871119530, guid: a18fee188aac64f4bbaf857dcf89fb1f, type: 3}
   m_PrefabInstance: {fileID: 1766366720}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &695950129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 695950130}
+  m_Layer: 0
+  m_Name: Environment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &695950130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695950129}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.4765186, y: -5.844818, z: 10.447811}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1687108351}
+  - {fileID: 1929433558}
+  - {fileID: 1122522657}
+  - {fileID: 1991377257}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1122522655
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,11 +315,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122522655}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 6.4765186, y: 8.844818, z: -10.447811}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 695950130}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1517410375
@@ -465,11 +500,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687108348}
   m_LocalRotation: {x: 0.34699488, y: 0.0065591484, z: -0.0024268406, w: 0.937841}
-  m_LocalPosition: {x: -0.54, y: 26, z: -32.72}
+  m_LocalPosition: {x: 5.9365187, y: 31.844818, z: -43.167812}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 695950130}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 28.514, y: 0, z: 0}
 --- !u!114 &1687108352
@@ -519,7 +554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1012225772871119530, guid: a18fee188aac64f4bbaf857dcf89fb1f, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1012225772871119530, guid: a18fee188aac64f4bbaf857dcf89fb1f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -657,13 +692,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929433554}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.9}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.4765186, y: 5.844818, z: -12.347811}
   m_LocalScale: {x: 10.858751, y: 8.457685, z: 7.600055}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 695950130}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1984552715
 GameObject:
@@ -695,7 +730,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1984552718
 MonoBehaviour:
@@ -713,7 +748,7 @@ MonoBehaviour:
   personIds: 
   currentFrameCount: 0
   spawner: {fileID: 327701369}
-  personObject: {fileID: 327701368}
+  movement: {fileID: 327701371}
 --- !u!1 &1991377255
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,11 +812,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1991377255}
   m_LocalRotation: {x: 0.34699488, y: 0.0065591484, z: -0.0024268406, w: 0.937841}
-  m_LocalPosition: {x: -0.54, y: 26, z: -32.72}
+  m_LocalPosition: {x: 5.9365187, y: 31.844818, z: -43.167812}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1517410376}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 695950130}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 57.615, y: 94.961, z: 59.606}

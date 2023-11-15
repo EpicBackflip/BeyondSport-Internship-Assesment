@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour
         {
             GameObject personObject = Instantiate(personprefab, position, Quaternion.identity);
             personList.Add(personObject);
-            personObject.GetComponent<PersonObject>().PersonId = personId;
+            personObject.GetComponent<Movement>().PersonId = personId;
             personObject.name = "Person" + personId;
         }
     }
