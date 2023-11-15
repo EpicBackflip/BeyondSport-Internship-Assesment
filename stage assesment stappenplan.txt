@@ -1,0 +1,9 @@
+step 1. researching how jsons work in unity.
+step 2. trying to save values from the json in unity variables.
+step 3. figuring out this is a nested json and works a lot more complicated
+step 4. reading on stack overflow that newtonsoft works a lot better.
+step 5. finding a stackoverflow article about nested jsons and how to save them in a list https://stackoverflow.com/questions/67834133/how-to-iterate-through-a-json-response-with-nested-arrays-lists
+step 6. finding a stackoverflow article about multi lined jsons https://stackoverflow.com/questions/51217479/additional-text-encountered-after-json-reading
+step 6. trying to get the actual value of the framecounts(chatgpt)
+step 7. updating the update method based on the framcount(chatgpt)
+step 8. 
