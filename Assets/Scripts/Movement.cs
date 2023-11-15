@@ -32,7 +32,7 @@ public class Movement : MonoBehaviour
         }
     }
 
-    // here i'm setting the ball position to be that of the ball from the json 
+    // here i'm setting the ball position to be that of the ball position from the json 
     // and doing the same for the players. I've tried using rigidbodies for the movement but they were very laggy and didn't work very well.
     public void UpdatePersonPositions(List<Person> persons,Ball ball)
     {

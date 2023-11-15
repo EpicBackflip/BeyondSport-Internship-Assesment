@@ -11,7 +11,7 @@ public class Spawner : MonoBehaviour
     {
         // here i'm spawning the playerobjects based on the persons from the dataloader class.
         // basicly putting in the data i retrieved from the json and put inside the personlist to put it in the gameobjects
-        // i also assigned their names to be equal to the idea so they're easier to distinguish.
+        // i also assigned their names to be equal to the id so they're easier to distinguish.
         Vector3 position = new Vector3(0, 0, 0);
         foreach (Person person in _dataLoader.persons)
         {

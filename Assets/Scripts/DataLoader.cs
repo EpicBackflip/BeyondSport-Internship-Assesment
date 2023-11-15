@@ -13,7 +13,6 @@ public class DataLoader : MonoBehaviour
     public List<Root> frames;
     public List<int> personIds = new List<int>();
     public IEnumerable<Root> roots;
-    public int currentFrameCount;
     public Spawner spawner = new Spawner();
     public List<Person> persons = new List<Person>();
     [FormerlySerializedAs("personObject")] public Movement movement = new Movement();
@@ -49,7 +48,8 @@ public class DataLoader : MonoBehaviour
         spawner.SpawnPersons();
         movement.SetColor(persons);
     }
-    // here i'm pretty much doing the usual json file stuff basicly a function to get the frames out of the json
+    
+    // here i'm pretty much doing the usual json file stuff basicly a function to get the frames out of the json and putting them in a variable
     // i was using system.utilities before but switched to newtonsoft as i read everywhere on stackoverflow that it works a lot better.
     public static IEnumerable<Root> getRoots(string path)
     {
